@@ -16,17 +16,7 @@ def subscriber_generator(filename):
 
 
 def instruction():
-    print('\n'.join([
-        "Usage: python get.py -p PSWD" +
-        "[-u USER -d DBNAME -h HOST -s ID_START -e ID_END]",
-        "where:"
-        "-p\tMySQL password",
-        "-u\tMySQL user ('root' as default)",
-        "-d\tMySQL db name ('test_db' as default)",
-        "-h\tMySQL-server host (localhost as default)",
-        "-s\tsubscriber id which is a filter's start (1234 as default)",
-        "-s\tsubscriber id which is a filter's end (1334 as default)",
-    ]))
+    print("Usage: python get.py FILENAME")
     sys.exit()
 
 SETTINGS = dict(u='root', p=True, d='test_db', h='localhost', s=1234, e=1334)
