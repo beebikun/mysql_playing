@@ -15,16 +15,11 @@ def subscriber_generator(filename):
         yield dict(zip(keys, to_list(subscriber)))
 
 
-def instruction():
-    print("Usage: python get.py FILENAME")
-    sys.exit()
-
-SETTINGS = dict(u='root', p=True, d='test_db', h='localhost', s=1234, e=1334)
-
 if __name__ == "__main__":
     args = sys.argv
     if len(args) == 1:
-        instruction()
+        print("Usage: python get.py FILENAME")
+        sys.exit()
     else:
         filename = args[1]
         #here it is
