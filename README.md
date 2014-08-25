@@ -1,20 +1,20 @@
-*Assumed, that mysql-server, mysql-client and pip is already installed*
+*Assumed, that mysql-server and mysql-client are already installed*
 
 USAGE
 =====
 
 SETUP
 -----
-First, run the shell script
+First, run a setup shell script
 <br>
 ```
 chmod 777 setup.sh
-./setip.sh USER PSWD
+./setup.sh USER PSWD
 ```
 <br>
 where USER - it is your username for mysql and PSWD - your password for mysql<br>
 <br>
-This script creates a table and restores some dump in it.
+This script creates a table and restores a dump in it.
 
 GET SUBSCRIBER
 --------------
