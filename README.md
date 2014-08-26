@@ -16,8 +16,8 @@ where USER - it is your username for mysql and PSWD - your password for mysql<br
 <br>
 This script creates a table and restores a dump in it.
 
-GET SUBSCRIBER
---------------
+GET SUBSCRIBERS
+---------------
 ```
 chmod 777 get.sh
 ./get.sh USER PSWD START END
